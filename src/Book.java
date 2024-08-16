@@ -2,11 +2,14 @@ public class Book {
     private final String Title;
     private final String Author;
     private final String Category;
+    boolean availability;
+    private Borrower borrowedBy;
 
     public Book(String title, String author, String category) {
         Title = title;
         Author = author;
         Category = category;
+        availability = true;
     }
 
     public String getTitle() {
@@ -19,5 +22,17 @@ public class Book {
 
     public String getCategory() {
         return Category;
+    }
+
+    public boolean isAvailable() {
+        return availability;
+    }
+
+    public void setBorrowedBy(Borrower borrowedBy) {
+        this.borrowedBy = borrowedBy;
+    }
+
+    public Borrower getBorrowedBy() {
+        return borrowedBy;
     }
 }

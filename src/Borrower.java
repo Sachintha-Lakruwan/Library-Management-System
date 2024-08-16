@@ -2,6 +2,7 @@ public class Borrower {
     private final String Name;
     private final String ContactInformation;
     private final String MembershipID;
+    private Borrower[] borrowedBooks;
 
     public Borrower(String name, String contactInformation, String membershipID) {
         Name = name;
@@ -20,4 +21,5 @@ public class Borrower {
     public String getMembershipID() {
         return MembershipID;
     }
+
 }

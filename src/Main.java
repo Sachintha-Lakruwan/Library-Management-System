@@ -39,9 +39,9 @@ public class Main {
                      
                     """);
 
-            String userName = scanner.nextLine();
+            String userInput = scanner.nextLine();
 
-            switch (userName){
+            switch (userInput) {
                 case "1":
                     bookManager.add();
                     break;
@@ -80,6 +80,7 @@ public class Main {
                     System.out.println("Please choose a valid option");
             }
         }
+
         scanner.close();
     }
 }
