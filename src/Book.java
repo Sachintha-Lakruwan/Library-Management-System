@@ -30,6 +30,12 @@ public class Book {
 
     public void setBorrowedBy(Borrower borrowedBy) {
         this.borrowedBy = borrowedBy;
+        availability = false;
+    }
+
+    public void returnBook(){
+        this.borrowedBy = null;
+        availability = true;
     }
 
     public Borrower getBorrowedBy() {
